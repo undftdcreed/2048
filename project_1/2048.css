@@ -7,9 +7,16 @@ hr{
     width: 500px;
 }
 
+h1 {
+    background-color: orange;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
 #board {
-    width: 400px;
-    height: 400px;
+    width: 395px;
+    height: 395px;
     background-color: beige;
     border: 6px solid whitesmoke;
     margin: 0 auto;
@@ -18,13 +25,68 @@ hr{
 }
 
 .tile {
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
     border: solid #bbada0;
     font-size: 40px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     display: flex;
+    padding: .05%;
 }
 
+.x2 {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+.x4 {
+    background-color: aliceblue;
+    color: aquamarine;
+}
+
+.x8 {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+.x16 {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+.x32 {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+.x64 {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+.x128 {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+.x256 {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+.x512 {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+.x1024 {
+    background-color: aqua;
+    color: aquamarine;
+}
+
+.x2048 {
+    background-color: aqua;
+    color: aquamarine;
+}
