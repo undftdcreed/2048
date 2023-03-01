@@ -11,7 +11,8 @@ h1 {
     background-color: orange;
     flex-wrap: wrap;
     justify-content: center;
-
+    width: 400px;
+    
 }
 
 #board {

@@ -1,17 +1,18 @@
 //clarify the board
 //clarify different values of 2048 ie [2,4,8,16,32,64,128,256,512,1024,2048]
 
-
+var window;
 var board;
-var score;
+var score = 0;
 var rows = 4;
 var columns = 4;
+
 //when loading the browser up
 window.onload = function() {
-   setGame();
+    setGame();
 }
 
-function setGame(){
+function setGame() {
     board = [
         [0, 0, 0, 0],
         [0, 0, 0, 0],
@@ -45,14 +46,28 @@ for(let r = 0; r < rows; r++) {
     if (num > 0) {
         tile.innerText = num.toString();
         if(num <= 4096) {
-            tile.classList.add("x"+num.toString());
+            tile.classList.add("x" + num.toString());
         //update colors if less than or equal to 4096
         } else {
             tile.classList.add("x8192");
-        //update to 8192 colors 
+        //update to 8192 color
         }
         }   
     }
+
+    function hasEmptyTile(){
+        let count = 0;
+        for (let r = 0; r < rows; r++){
+                for(let c = 0; c < columns; c++){
+                    if(board[r][c] == 0) { // at least one zero on the board
+                        return true
+                    }
+                }
+        }
+        return false;
+    }
+
+
 //creates two random spots to place 2 and a 4 at the beginning of the game
    function setTwo() {
     if (!hasEmptyTile()) {
@@ -74,3 +89,4 @@ for(let r = 0; r < rows; r++) {
         }
     }
    }
+
