@@ -1,6 +1,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    background-color: antiquewhite;
 }
 
 hr{
@@ -8,10 +9,12 @@ hr{
 }
 
 h1 {
-    background-color: orange;
-    flex-wrap: wrap;
+    position: center;
+    background-color: #f59575;
+    width: 20vmin;
     justify-content: center;
-    width: 400px;
+    border: 1vmin;
+    align-items: center;
     
 }
 
@@ -23,6 +26,7 @@ h1 {
     margin: 0 auto;
     display:flex;
     flex-wrap: wrap;
+    
 }
 
 .tile {
@@ -35,59 +39,69 @@ h1 {
     align-items: center;
     display: flex;
     padding: .05%;
+    
 }
 
 .x2 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #eee4da;
+    color: #727371;
 }
 
 .x4 {
-    background-color: aliceblue;
+    background-color: #ece0ca;
     color: aquamarine;
 }
 
 .x8 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #f4b17a;
+    color: white;
 }
 
 .x16 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #f59575;
+    color: white;
 }
 
 .x32 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #f57c5f;
+    color: white;
 }
 
 .x64 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #f65d3b;
+    color: white;
 }
 
 .x128 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #edcc63;
+    color: white;
 }
 
 .x256 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #edcc63;
+    color: white;
 }
 
 .x512 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #edc651;
+    color: white;
 }
 
 .x1024 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #eec744;
+    color: white;
 }
 
 .x2048 {
-    background-color: aqua;
-    color: aquamarine;
+    background-color: #ecc230;
+    color: white;
+}
+.x4096 {
+    background-color: #fe3d3d;
+    color: white;
+}
+
+.x8192 {
+    background-color: #ff2020;
+    color: white;
 }

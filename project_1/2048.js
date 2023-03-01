@@ -89,4 +89,20 @@ for(let r = 0; r < rows; r++) {
         }
     }
    }
+//puts another 2 down with every key being pressed
+   document.addEventListener("keyup", (e) => {
+    if (e.code == "ArrowLeft") {
+        setTwo();
+    }
+    else if (e.code == "ArrowRight") {
+        setTwo();
+    }
+    else if (e.code == "ArrowUp") {
+        setTwo();
+    }
+    else if (e.code == "ArrowDown") {
+        setTwo();
+    }
+        
+   })
 
