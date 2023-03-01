@@ -9,12 +9,12 @@ hr{
 }
 
 h1 {
-    position: center;
+    text-align: center;
     background-color: #f59575;
     width: 20vmin;
     justify-content: center;
-    border: 1vmin;
-    align-items: center;
+    border: 50vmin;
+    align-self: center;
     
 }
 
@@ -104,4 +104,16 @@ h1 {
 .x8192 {
     background-color: #ff2020;
     color: white;
+}
+
+marquee {
+    font-size: 50px;
+}
+
+p {
+    font-size:x-large;
+    font-weight: bold;
+    width: 400px;
+    justify-content: center;
+    align-self: center;
 }
