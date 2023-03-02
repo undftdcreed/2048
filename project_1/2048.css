@@ -1,6 +1,6 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: antiquewhite;
 }
 
@@ -9,13 +9,7 @@ hr{
 }
 
 h1 {
-    text-align: center;
-    background-color: #f59575;
-    width: 20vmin;
-    justify-content: center;
-    border: 50vmin;
-    align-self: center;
-    
+    background-color:#f59575;
 }
 
 #board {
@@ -23,10 +17,14 @@ h1 {
     height: 395px;
     background-color: beige;
     border: 6px solid whitesmoke;
-    margin: 0 auto;
+    margin: auto;
     display:flex;
     flex-wrap: wrap;
     
+}
+
+#How {
+    text-align: center;
 }
 
 .tile {
@@ -39,6 +37,7 @@ h1 {
     align-items: center;
     display: flex;
     padding: .05%;
+    position: relative;
     
 }
 
