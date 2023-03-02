@@ -10,6 +10,7 @@ hr{
 
 h1 {
     background-color:#f59575;
+    padding:  0 auto  ;
 }
 
 #board {
@@ -21,10 +22,6 @@ h1 {
     display:flex;
     flex-wrap: wrap;
     
-}
-
-#How {
-    text-align: center;
 }
 
 .tile {
@@ -112,7 +109,7 @@ marquee {
 p {
     font-size:x-large;
     font-weight: bold;
-    width: 400px;
     justify-content: center;
     align-self: center;
+    max-width: 200vmin;
 }

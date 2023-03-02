@@ -1,16 +1,17 @@
 //clarify the board
 //clarify different values of 2048 ie [2,4,8,16,32,64,128,256,512,1024,2048]
 
-var window;
-var board;
-var score = 0;
-var rows = 4;
-var columns = 4;
+let window;
+let board;
+let score = 0;
+const rows = 4;
+const columns = 4;
 
 //when loading the browser up
 window.onload = function() {
     setGame();
 }
+
 
 function setGame() {
     board = [
@@ -107,7 +108,7 @@ for(let r = 0; r < rows; r++) {
         slideDown();
         setTwo();
     }
-        
+        document.getElementById("score").innerText = score;
    })
 //create new array of all nums != 0
    function filterZero(row){
@@ -185,3 +186,8 @@ function slideDown() {
         }
     }
 }
+//restart button calling back to the window onload
+document.querySelector('.restart-btn').addEventListener('click',function(){
+    window.location.reload();
+    return false;
+});
