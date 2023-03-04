@@ -194,3 +194,5 @@ document.querySelector('.restart-btn').addEventListener('click',function(){
     return false;
 });
 
+function checkWinner();
+    if (score = 2048) = ""
