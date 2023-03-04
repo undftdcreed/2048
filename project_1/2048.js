@@ -108,17 +108,10 @@ for(let r = 0; r < rows; r++) {
         slideDown();
         setTwo();
     }
-    function highscore(){
-        if (!localStorage.getItem('score')){
-            localStorage.setItem('score', count);
-        }
-        let highscore = localStorage.getItem('score');
-        if (count <= score) {
-            document.getElementById("score").innerHTML = count;
-            localStorage.setItem("score",count);
-        }
+    document.getElementById("score").innerText = score;
     }
-   })
+    
+    )
 //create new array of all nums != 0
    function filterZero(row){
         return row.filter(num => num != 0);

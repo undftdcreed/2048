@@ -38,6 +38,23 @@ h1 {
     
 }
 
+marquee {
+    font-size: 50px;
+}
+
+p {
+    font-size:x-large;
+    font-weight: bold;
+    justify-content: center;
+    align-self: center;
+    max-width: 200vmin;
+}
+
+.restart-btn{
+    background-color: #ff2020;
+    width: 80px;
+}
+
 .x2 {
     background-color: #eee4da;
     color: #727371;
@@ -45,7 +62,7 @@ h1 {
 
 .x4 {
     background-color: #ece0ca;
-    color: aquamarine;
+    color: #727371;
 }
 
 .x8 {
@@ -102,14 +119,3 @@ h1 {
     color: white;
 }
 
-marquee {
-    font-size: 50px;
-}
-
-p {
-    font-size:x-large;
-    font-weight: bold;
-    justify-content: center;
-    align-self: center;
-    max-width: 200vmin;
-}
