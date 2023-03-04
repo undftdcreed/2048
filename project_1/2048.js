@@ -1,9 +1,9 @@
 //clarify the board
 //clarify different values of 2048 ie [2,4,8,16,32,64,128,256,512,1024,2048]
 
-let window;
-let board;
-let score = 0;
+var window;
+var board;
+var score = 0;
 const rows = 4;
 const columns = 4;
 
@@ -108,7 +108,16 @@ for(let r = 0; r < rows; r++) {
         slideDown();
         setTwo();
     }
-        document.getElementById("score").innerText = score;
+    function highscore(){
+        if (!localStorage.getItem('score')){
+            localStorage.setItem('score', count);
+        }
+        let highscore = localStorage.getItem('score');
+        if (count <= score) {
+            document.getElementById("score").innerHTML = count;
+            localStorage.setItem("score",count);
+        }
+    }
    })
 //create new array of all nums != 0
    function filterZero(row){
@@ -191,3 +200,4 @@ document.querySelector('.restart-btn').addEventListener('click',function(){
     window.location.reload();
     return false;
 });
+
