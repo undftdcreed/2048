@@ -95,18 +95,22 @@ for(let r = 0; r < rows; r++) {
     if (e.code == "ArrowLeft") {
         slideLeft();
         setTwo();
+        checkWinner();
     }
     else if (e.code == "ArrowRight") {
         slideRight();
         setTwo();
+        checkWinner();
     }
     else if (e.code == "ArrowUp") {
         slideUp();
         setTwo();
+        checkWinner();
     }
     else if (e.code == "ArrowDown") {
         slideDown();
         setTwo();
+        checkWinner();
     }
     document.getElementById("score").innerText = score;
     }
@@ -194,5 +198,7 @@ document.querySelector('.restart-btn').addEventListener('click',function(){
     return false;
 });
 
-function checkWinner();
-    if (score = 2048) = ""
+function checkWinner() {
+    if([r][c] !== 0)
+}
+console.log(checkWinner)
