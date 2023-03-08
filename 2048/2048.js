@@ -76,7 +76,7 @@ for(let r = 0; r < rows; r++) {
     }
     let found = false;
     while (!found) {
-        //find random row and column to place a 2 in
+        //find random and empty row and column to place a 2 in
         let r = Math.floor(Math.random() * rows);
         let c = Math.floor(Math.random() * columns);
         if (board[r][c] == 0) {
@@ -94,23 +94,19 @@ for(let r = 0; r < rows; r++) {
    document.addEventListener("keyup", (e) => {
     if (e.code == "ArrowLeft") {
         slideLeft();
-        setTwo();
-        checkWinner();
+        setTwo()
     }
     else if (e.code == "ArrowRight") {
         slideRight();
-        setTwo();
-        checkWinner();
+        setTwo()
     }
     else if (e.code == "ArrowUp") {
         slideUp();
-        setTwo();
-        checkWinner();
+        setTwo()
     }
     else if (e.code == "ArrowDown") {
         slideDown();
-        setTwo();
-        checkWinner();
+        setTwo()
     }
     document.getElementById("score").innerText = score;
     }
@@ -198,7 +194,3 @@ document.querySelector('.restart-btn').addEventListener('click',function(){
     return false;
 });
 
-function checkWinner() {
-    if([r][c] !== 0)
-}
-console.log(checkWinner)
