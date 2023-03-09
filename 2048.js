@@ -1,9 +1,9 @@
 //clarify the board
 //clarify different values of 2048 ie [2,4,8,16,32,64,128,256,512,1024,2048]
 
-var window;
-var board;
-var score = 0;
+let window;
+let board;
+let score = 0;
 const rows = 4;
 const columns = 4;
 
@@ -21,7 +21,7 @@ function setGame() {
         [0, 0, 0, 0]
     ];
 
-//iterate through the rows and columns and create a coordinate location and a div for each valueuser stor
+//iterate through the rows and columns and create a coordinate location and a div for each value
 for(let r = 0; r < rows; r++) {
     for(let c = 0; c < columns; c++){
         let tile = document.createElement("div");
