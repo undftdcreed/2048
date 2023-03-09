@@ -1,9 +1,9 @@
 //clarify the board
 //clarify different values of 2048 ie [2,4,8,16,32,64,128,256,512,1024,2048]
 
-let window;
-let board;
-let score = 0;
+var window;
+var board;
+var score = 0;
 const rows = 4;
 const columns = 4;
 
