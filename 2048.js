@@ -4,8 +4,8 @@
 var window;
 var board;
 var score = 0;
-const rows = 4;
-const columns = 4;
+var rows = 4;
+var columns = 4;
 
 //when loading the browser up
 window.onload = function() {
