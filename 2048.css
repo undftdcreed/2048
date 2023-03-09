@@ -10,30 +10,28 @@ hr{
 
 h1 {
     background-color:#f59575;
-    padding:  0 auto  ;
 }
 
 #board {
-    width: 395px;
-    height: 395px;
+    width: 400px;
+    height: 400px;
     background-color: beige;
-    border: 6px solid whitesmoke;
-    margin: auto;
+    border: 5px solid whitesmoke;
+    margin: 0 auto;
     display:flex;
     flex-wrap: wrap;
     
 }
 
 .tile {
-    width: 95vmin;
-    height: 95vmin;
-    border: solid #bbada0;
+    width: 90px;
+    height: 90px;
+    border: 5px solid #bbada0;
     font-size: 40px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     display: flex;
-    padding: .05%;
     position: relative;
     
 }
