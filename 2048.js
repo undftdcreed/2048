@@ -72,7 +72,7 @@ for(let r = 0; r < rows; r++) {
 //creates two random spots to place two 2's at the beginning of the game
    function setTwo() {
     if (!hasEmptyTile()) {
-        return;
+        return gameOverScreen(score);
     }
     let found = false;
     while (!found) {
@@ -88,8 +88,9 @@ for(let r = 0; r < rows; r++) {
             //sets color class to x2
             found =  true;
         }
+    } 
     }
-   }
+   
 //puts another 2 down with every key being pressed
    document.addEventListener("keyup", (e) => {
     if (e.code == "ArrowLeft") {
@@ -193,4 +194,26 @@ document.querySelector('.restart-btn').addEventListener('click',function(){
     window.location.reload();
     return false;
 });
+
+
+
+function gameOverScreen() {
+    const gameOverContainer = document.createElement("div");
+    gameOverContainer.classList.add("gameover-container");
+
+    
+    gameOverContainer.innerHTML = ` 
+    <h1>Game Over</h1>
+    <p>Your score was: ${score}</p>
+    `;
+
+    gameOverContainer.style.position = "absolute";
+    gameOverContainer.style.top = "50%";
+    gameOverContainer.style.left = "50%";
+    gameOverContainer.style.transform = "translate(-50%, -50%)";
+    gameOverContainer.style.textAlign = "center";
+
+    document.querySelector
+    document.body.appendChild(gameOverContainer);
+}
 
