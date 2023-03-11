@@ -11,7 +11,7 @@ MVP features
 
 
 ----------------------------------------------
-PLAY MY GAME - file:///Users/brandon/Seir/projects/project_1/2048.html
+PLAY MY GAME - https://github.com/undftdcreed/2048/settings/pages#:~:text=https%3A//undftdcreed.github.io/2048/
 
 Additional References
 ------------------------
