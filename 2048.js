@@ -37,24 +37,47 @@ for(let r = 0; r < rows; r++) {
     setTwo();
 }
 
-
+//function to update the tiles as they slide around
     function updateTile(tile,num) {
         tile.innerText = "";
         tile.classList.value = "";
         //resets the text and class values
         tile.classList.add("tile");
-    
-    if (num > 0) {
-        tile.innerText = num.toString();
-        if(num <= 4096) {
-            tile.classList.add("x" + num.toString());
-        //update colors if less than or equal to 4096
-        } else {
-            tile.classList.add("x8192");
-        //update to 8192 color
-        }
+        
+        if (num > 0) {
+            tile.innerText = num.toString();
+            if(num <= 4096) {
+                tile.classList.add("x" + num.toString());
+                //update colors if less than or equal to 4096
+            } else {
+                tile.classList.add("x8192");
+                //update to 8192 color
+            }
         }   
     }
+
+
+    //puts another 2 down with every key being pressed
+       document.addEventListener("keyup", (e) => {
+        if (e.code == "ArrowLeft") {
+            slideLeft();
+            setTwo()
+        }
+        else if (e.code == "ArrowRight") {
+            slideRight();
+            setTwo()
+        }
+        else if (e.code == "ArrowUp") {
+            slideUp();
+            setTwo()
+        }
+        else if (e.code == "ArrowDown") {
+            slideDown();
+            setTwo()
+        }
+        document.getElementById("score").innerText = score;
+        })
+
 
     function hasEmptyTile(){
         let count = 0;
@@ -91,43 +114,25 @@ for(let r = 0; r < rows; r++) {
     } 
     }
    
-//puts another 2 down with every key being pressed
-   document.addEventListener("keyup", (e) => {
-    if (e.code == "ArrowLeft") {
-        slideLeft();
-        setTwo()
-    }
-    else if (e.code == "ArrowRight") {
-        slideRight();
-        setTwo()
-    }
-    else if (e.code == "ArrowUp") {
-        slideUp();
-        setTwo()
-    }
-    else if (e.code == "ArrowDown") {
-        slideDown();
-        setTwo()
-    }
-    document.getElementById("score").innerText = score;
-    }
-    
-    )
 //create new array of all nums != 0
    function filterZero(row){
         return row.filter(num => num != 0);
    }
 
    function slide(row){
-    row = filterZero(row);
+    row = filterZero(row); //get rid of zeroes
+
+    //slide
         for(let i = 0; i < row.length -1; i++){
+            //check every 2
             if (row[i] == row[i+1]) {
                 row[i] *= 2;
                 row[i+1] = 0;
                 score += row[i];
-            }
+            } //add common intergers in
         }
         row = filterZero(row);
+        //add zeroes back
         while (row.length < columns){
             row.push(0);
         }
@@ -196,24 +201,25 @@ document.querySelector('.restart-btn').addEventListener('click',function(){
 });
 
 
-
+//gameover screen 
 function gameOverScreen() {
+    //create a div and a class list
     const gameOverContainer = document.createElement("div");
     gameOverContainer.classList.add("gameover-container");
 
-    
+    //add the html
     gameOverContainer.innerHTML = ` 
     <h1>Game Over</h1>
     <p>Your score was: ${score}</p>
     `;
-
+    //add css through js
     gameOverContainer.style.position = "absolute";
     gameOverContainer.style.top = "50%";
     gameOverContainer.style.left = "50%";
     gameOverContainer.style.transform = "translate(-50%, -50%)";
     gameOverContainer.style.textAlign = "center";
 
-    document.querySelector
+    //add to body
     document.body.appendChild(gameOverContainer);
 }
 
