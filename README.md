@@ -24,7 +24,7 @@ Future Enhancements
 
 
 ----------------------------------------------
-PLAY MY GAME - https://github.com/undftdcreed/2048/settings/pages#:~:text=https%3A//undftdcreed.github.io/2048/
+PLAY MY GAME -[ https://github.com/undftdcreed/2048/settings/pages#:~:text=https%3A//undftdcreed.github.io/2048/](https://undftdcreed.github.io/2048/)
 
 Additional References
 ------------------------
