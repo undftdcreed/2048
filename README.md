@@ -23,11 +23,16 @@ Technologies Used
 -Htmls
 -CSS
 -Javascript
+-i dropper tool for coloring 
 
 Future Enhancements
 -smoother way to slide and animation wise (maybe making the board an absolute object and the tiles relative)
 -better gameover pop up alert
 -styled way better with a more round and friendlier UI
+
+Difficulties
+-Had an issue with readme posting messing with the index.html
+-
 
 
 
@@ -38,3 +43,8 @@ Additional References
 ------------------------
 - Wireframe Mockups
 https://www.figma.com/file/r0oVGBIcO8DmN9vdUQKSIK/2048?node-id=0%3A1&t=UPWgWdKPBjdbIOUQ-0
+
+
+Sources
+--------------------------
+-chatgbt was used to get ideas on how to get the functionality to work or when i got stuck
