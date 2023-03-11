@@ -48,3 +48,4 @@ https://www.figma.com/file/r0oVGBIcO8DmN9vdUQKSIK/2048?node-id=0%3A1&t=UPWgWdKPB
 Sources
 --------------------------
 -chatgbt was used to get ideas on how to get the functionality to work or when i got stuck
+-got some ideas from instagram ads
