@@ -12,7 +12,7 @@ User will be able to shift tiles in directions to add up variables of the same a
 What are the rules of the game 2048?
 2048 Game Rules
 
-In this game, the player must combine tiles containing the same numbers until they reach the number 2048. The tiles can contain only integer values starting from 2, and that are a power of two, like 2, 4, 8, 16, 32, and so on.
+In this game, the player must use the ARROW KEYS TO combine tiles containing the same numbers until they reach the number 2048. The tiles can contain only integer values starting from 2, and that are a power of two, like 2, 4, 8, 16, 32, and so on.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 MVP features
 -game over function
